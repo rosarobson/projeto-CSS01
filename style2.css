@@ -1,0 +1,186 @@
+@import url('reset.css');
+body{
+    background-color: black;
+}
+
+/*==============================================================================================================================================
+============================================== HEADER ==========================================================================================
+=============================================================================================================================================*/
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(assets/images/banner.png); /* Definindo o efeito degradê no header*/
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
+    background-size: cover; /*ocupar o espaço com toda a imagem*/
+    background-repeat: no-repeat; /*definir que a imagem não se repita*/
+    height: 600px; /*Altura do banner - Espaço onde terá a logo, titulo e sub-titulo*/
+    padding-top: 60px; /*Distancio do topo da página*/
+    margin-right: -10px; /*ajustando a margem da pagina*/
+    border-bottom: #33A8DB80 1px solid ; /*bora definindo o limite (FIM) do meu HEADER*/
+}
+.banner .banner-content {
+    color: aliceblue; /*Cor definida para o conteúdo em texto que estiver dentro da classe*/
+    width: 600px; /*largura da classe*/
+    margin: auto; /*por padrão após definir a largura, essa classe se alinha à esquerda. Definindo a margin como AUTO, esta se alinha no centro*/
+    text-align: center; /*alinhamento do texto*/    
+}
+.banner h1 {
+    font-size: 2.5rem; /*Tamanho da fonte, utilizando a unidade de medida 'rem'*/
+    font-weight: 900; /*largura da fonte, define um efeito que se aseemelha ao negrito*/
+    text-transform: uppercase; /*deixar a escrita em maiusculo*/
+    color: transparent; /*Definindo a cor do texto como transparete, para que possa inverter com o background*/
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /*Define uma cor de fundo*/
+    background-clip: text;
+    -webkit-background-clip: text; /*inverter a cor do backgroud com o texto*/
+}
+.banner p{ /*definindo a formatação do sub-titulo dentro da tab 'p'*/
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+}
+.banner .logo {
+    background-color: rgba(0, 0, 0, 0.2); /*Cor de fundo, deixando o contorno da imagem do logo levemente transparente*/
+    height: 260px; /*altura*/
+    width: 260px; /*largura*/
+    margin: auto; /*Definindo a margin como AUTO, esta se alinha no centro*/
+    border-radius: 50%; /*border-radius permite arredondar os cantos de uma caixa */
+    padding: 16px; /*espaçamento interno entre a borda e a imagem (entre a extremidade da caixa e o conteúdo)*/
+    margin-bottom: 16px; /*margem entre a DIV (.logo) e o bottom da DIV (.banner)*/
+}
+.banner .logo img {
+    height: 100%; /*altura*/
+    width: 100%; /*largura*/
+    margin: auto; /*Definindo a margin como AUTO, esta se alinha no centro*/
+    object-fit: contain; /*ajusta a imagem dentro do espaço definido, de forma que não perca a resolução e sem distorção, mantendo a qualidade original*/
+    
+}
+.banner button {
+    font-size: 1rem; /*Tamanho da fonte contida no botão*/
+    color:#31A8DD; /*Cor de fonte*/
+    font-weight: bold; /*Estilo da fonte, negrito*/
+    text-transform: uppercase;  /*deixar a escrita em maiusculo*/
+    padding: 16px 32px; /*espaçamento vertical e horizontal*/
+    letter-spacing: 4px; /*espaçamento entre caractere*/
+    background: transparent; /*fundo transparente*/
+    border-image: linear-gradient(#3BA1CD, #1572B7); /*combinação de cores nof ormato linear-gradient para a borda*/
+    border: solid 1px; /*deixando a borda visível*/
+    border-top: solid 2px;
+    border-radius: 90px;
+    box-shadow: inset -5px /*<- sobra da esquerda*/ 6px /*<- sobra do topo*/ 15px /*<- sobra da direita*/ #00000088;
+}
+.banner button:hover { /*Efeito ao passar o mouse por cima*/
+    cursor: pointer;
+    background: rgba(7, 52, 59, 0.719); /*fundo transparente*/
+    box-shadow: inset 5px /*<- sobra da esquerda*/ -6px /*<- sobra do topo*/ -15px /*<- sobra da direita*/ #000000b3;
+    
+}
+.banner button:active { /*Efeito ao clicar no botão*/
+    border-top: solid 1px; 
+}
+
+/*==============================================================================================================================================
+================================================= MAIN =========================================================================================
+==============================================================================================================================================*/
+section {
+    margin: 100px auto; /*define a margem vertical e centraliza as sections do MAIN*/
+}
+h2 { /*formatação para todos os 'H2' da página*/
+    font-size: 2rem;
+    color: #33A8DB; /*cor da fonte*/
+    text-transform: uppercase;  /*deixar a escrita em maiusculo*/
+    font-weight: bold; /*Estilo da fonte, negrito*/
+    letter-spacing: 4px; /*espaçamento das letras*/
+    margin-bottom: 24px; /*ajustando o posicionamento em relação ao bottom*/
+
+}
+p{ /*formatação para todos 'P' da página*/
+    color: aliceblue;
+}
+/*---------------------------------------
+----- Primeira SECTION do MAIN* ---------
+----------------------------------------*/
+#course-content{ 
+    width: 800px;
+    text-align: center;
+    
+}
+
+.modules-list {
+    margin: 24px 0 -10px; /*definindo a margem da DIV com a classe 'modules-list'*/
+    
+}
+.modules-list .module {
+    color: aliceblue; /*cor do texto*/
+    width: 530px; /*define a largura*/
+    margin: 0 auto 24px; /*definindo a margem de cada div com a classe 'module'*/
+    border: 1px solid #33A8DB; /*definindo uma borda para a caixa*/
+    background-color: #252525; /*cor do fundo da DIV*/
+    padding: 16px; /*espaçamento interno entre a margem da caixa e o conteúdo (texto)*/
+    border-radius: 100px; /*deixando as bordas no formato arredondado*/
+    /*box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);*/
+    box-shadow: inset -5px /*<- sobra da esquerda*/ 6px /*<- sobra do topo*/ 15px /*<- sobra da direita*/ #000000b3; /*definindo sombreamento da caixa (esquerda, topo e direita conforme detalhado)*/
+}
+.modules-list .module span {
+    color: #33A8DB; /*Destaque para as palavras contidas na tag SPAN, dando destaque para cada módulo*/
+
+}
+/* FIM da primeira SECTION do MAIN*
+-------------------------------------/
+
+/*----------------------------------------------------------------------
+----- Segunda SECTION do MAIN - Com imagem grande e fixa no backgroud*
+-----------------------------------------------------------------------*/
+#transform-world {
+    height: 250px;
+    background-size: cover; /*Ajusta a imagem para ocupar todo o espaço, sem repetir no fundo*/
+    background-image: url(assets/images/woman-code.png);
+    background-attachment: fixed; /*define o backgrou como FIXO, caso seja uma imagem, este não se movera com a barra de rolagem e demais conteúdos da página*/
+    border-top: 1px solid #33A8DB80; /*definindo uma borda no top*/
+    border-bottom: 1px solid #33A8DB80; /*definindo uma borta no bottom*/
+    padding: 200px;
+    margin-right: -10px; /*ajustando a margem da pagina*/
+}
+
+#transform-world p{ /*formatação para o 'P' dentro do ID '#transform-world' */
+    font-weight: 900; /*destaque da fonte, semelhante a negrito*/
+    font-size: 2.5rem; /*tamanho da fonte*/
+    text-transform: lowercase; /*definindo todas as letras como minúsculo*/
+    max-width: 250px; /*limitando a largura maxima do meu texto, continuando na linha de baixo*/
+    text-shadow: 3px 1px #33A8DB; /*definindo uma sombra para o texto*/
+}
+/* FIM da segunda SECTION do MAIN*
+-------------------------------------/
+
+/*----------------------------------------------------------------------
+----- Terceira e ultima SECTION do MAIN --------------------------------
+-----------------------------------------------------------------------*/
+#professional-challenges{ /*ID refrente à ulta tag SECTION*/
+    text-align: center; /*definindo o alinhamento do texto no centro*/
+    width: 800px; /*definindo a largura*/
+}
+#professional-challenges img{
+    margin: 32px 0; /*ajustando a margem (posicionamento dentro da section)*/
+}
+
+#professional-challenges p{
+    font-size: 1.15rem;
+}
+/* FIM da terceira SECTION do MAIN*
+-------------------------------------/
+/*==============================================================================================================================================
+=============================================== FOOTER =========================================================================================
+==============================================================================================================================================*/
+footer{ /*formatação da tag footer, onde contém as informações de rodapé*/
+    padding: 60px 0; /*ajustando o posicionamento do conteúdo da tag*/
+    text-align: center; /*alinhamento do texto*/
+    background-image: linear-gradient(#32a8db00, #32a8db33); /*efeito degradê ao fundo*/
+    border-top: 1px solid #33A8DB80;
+    margin-right: -10px; /*ajustando a margem da pagina*/
+    margin-bottom: -10px; /*ajustando a margem da pagina*/
+}
+
+footer .dio-logo { /*definindo a largura da imagem*/
+    width: 300px;
+}
+footer a{ /*formatação do link - tag 'a'*/
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none; /*retirando o grifado padrã de link*/
+}
